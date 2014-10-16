@@ -1,0 +1,34 @@
+{
+    "name": "ikwattro/faker-extra",
+    "type": "library",
+    "description": "Extra providers for the Faker library",
+    "keywords": [
+        "faker",
+        "provider",
+        "generation",
+        "random"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christophe Willemsen",
+            "email": "chris@neoxygen.io"
+        }
+    ],
+    "require": {
+        "fzaninotto/faker": "~1.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ikwattro\\FakerExtra\\": "src/FakerExtra"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ikwattro\\FakerExtra\\Tests\\": "tests/FakerExtra/Tests"
+        }
+    }
+}
