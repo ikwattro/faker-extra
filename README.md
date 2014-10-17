@@ -29,6 +29,18 @@ $language = $faker->progLanguage;
 // e.g.: Cobolt
 ```
 
+## \FakerExtra\PersonExtra
+
+### fullName
+
+Use the base \Person provider to generate a name containing a firstName and a lastName
+
+```
+$fullname = $faker->fullName;
+
+// e.g. : Duncan Satterfield
+```
+
 ---
 
 #### Author
