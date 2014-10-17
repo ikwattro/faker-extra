@@ -41,6 +41,18 @@ $fullname = $faker->fullName;
 // e.g. : Duncan Satterfield
 ```
 
+## \FakerExtra\Hashtag
+
+Returns hashtags from a list of more than 2000 hashtags
+
+```
+$hashtag = $faker->hashtag;
+// e.g.: #banana
+
+$hashtags = $faker->hashtag(5)
+// e.g.: #banana,#php,#neo4j,#instalove,#rock
+```
+
 ---
 
 #### Author

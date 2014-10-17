@@ -16,5 +16,12 @@ class HashtagTest extends \PHPUnit_Framework_TestCase
         $hashtag = $faker->hashtag;
 
         $this->assertTrue(in_array($hashtag, $hashtags));
+        $hashs = $faker->hashtag(3);
+
+        $expl = explode(',', $hashs);
+        foreach ($expl as $ha){
+            $this->assertTrue(in_array($ha, $hashtags));
+        }
+
     }
 }
