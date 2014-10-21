@@ -24,4 +24,22 @@ class HashtagTest extends \PHPUnit_Framework_TestCase
         }
 
     }
+
+    public function testHashtagProviderWithHash()
+    {
+        $faker = Factory::create();
+        $faker->addProvider(new Hashtag($faker));
+
+        $hashtags = Hashtag::getHashtags(true);
+        $hashtag = $faker->hashtag(1, true);
+
+        $this->assertTrue(in_array($hashtag, $hashtags));
+        $hashs = $faker->hashtag(3, true);
+
+        $expl = explode(',', $hashs);
+        foreach ($expl as $ha){
+            $this->assertTrue(in_array($ha, $hashtags));
+        }
+
+    }
 }

@@ -46,11 +46,16 @@ $fullname = $faker->fullName;
 Returns hashtags from a list of more than 2000 hashtags
 
 ```
-$hashtag = $faker->hashtag;
-// e.g.: #banana
+Parameters : `$nb = 1`, `$withHash = false`
 
-$hashtags = $faker->hashtag(5)
-// e.g.: #banana,#php,#neo4j,#instalove,#rock
+$hashtag = $faker->hashtag;
+// e.g.: banana
+
+$hashtags = $faker->hashtag(5);
+// e.g.: banana,php,neo4j,instalove,rock
+
+$hashtags = $faker->hashtag(3, true):
+// e.g.: #graph,#opcode,#angry
 ```
 
 ---
